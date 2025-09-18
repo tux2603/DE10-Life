@@ -1,0 +1,6 @@
+db/*
+incremental_db/*
+output_files/*
+simulation/*
+de10_life_nativelink_simulation.rpt
+*.vhd.bak
