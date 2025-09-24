@@ -37,7 +37,8 @@ begin
             vsync => vsync,
             r_channel => r_channel,
             g_channel => g_channel,
-            b_channel => b_channel
+            b_channel => b_channel,
+				rst_n => '1'
         );
 
     -- Clock generation process

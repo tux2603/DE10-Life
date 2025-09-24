@@ -65,4 +65,21 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id vga_testbenc
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME vga_testbench -section_id vga_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE vga_testbench.vhd -section_id vga_testbench
 set_global_assignment -name VHDL_FILE vga_testbench.vhd
+set_location_assignment PIN_P11 -to clk_50MHz
+set_location_assignment PIN_B8 -to reset_n
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to reset_n
+set_location_assignment PIN_P1 -to b_channel[0]
+set_location_assignment PIN_T1 -to b_channel[1]
+set_location_assignment PIN_P4 -to b_channel[2]
+set_location_assignment PIN_N2 -to b_channel[3]
+set_location_assignment PIN_W1 -to g_channel[0]
+set_location_assignment PIN_T2 -to g_channel[1]
+set_location_assignment PIN_R2 -to g_channel[2]
+set_location_assignment PIN_R1 -to g_channel[3]
+set_location_assignment PIN_N3 -to hsync
+set_location_assignment PIN_N1 -to vsync
+set_location_assignment PIN_AA1 -to r_channel[0]
+set_location_assignment PIN_V1 -to r_channel[1]
+set_location_assignment PIN_Y2 -to r_channel[2]
+set_location_assignment PIN_Y1 -to r_channel[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
